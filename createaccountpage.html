@@ -1,0 +1,39 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<div class = "wrapper">
+    <form action = "interests.html">
+        <h2>WuThreads</h2>
+        <h3>Create an Account</h3>
+        <div class = "input-field">
+            <label>Create a username</label>
+            <input type = "text" required> 
+        </div>
+        <div class = "input-field">
+            <label>Create a password (Must contain: 1 uppercase letter, 1 special character, 1 lowercase letter, 1 digit)</label>
+            <input type = "password" required pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*\d).+">
+        </div>
+        <div class = "input-field">
+            <label>Confirm password</label>
+            <input type = "password" required pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*\d).+">
+        </div>
+        <div class = "input-field">
+            <label>Enter your email</label>
+            <input type = "email" required pattern= ".+@willamette\.edu">
+        </div>
+        <div class="radio-field">
+            <p>Please select your status: </p>
+            <input type="radio" id="student" name="status" value="student" required>
+            <label for="student">Student</label>
+            <input type="radio" id="faculty" name="status" value="faculty" required>
+            <label for="faculty">Faculty</label>
+        </div>
+            <button type="submit">Create Account</button>
+        </form>
+        <div class="register">
+            <p>
+                Already have an account?
+                <a href="Wuthreads.html">Log in here!</a>
+            </p>
+        </div>
+</div>
