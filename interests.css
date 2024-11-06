@@ -2,11 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 .input-field {
@@ -14,8 +22,10 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 500px; /* Increased width */
+    width: 100%;
+    max-width: 500px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .input-field h3 {
@@ -28,7 +38,7 @@ body {
     margin-bottom: 10px;
     font-size: 18px;
     color: #555;
-    text-align: left; /* Align labels to the left */
+    text-align: left;
 }
 
 .input-field input[type="checkbox"] {
@@ -36,10 +46,6 @@ body {
 }
 
 .next-button {
-    position:absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
     padding: 15px 30px;
     background-color: #791717;
     color: white;
@@ -47,6 +53,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
+    margin-top: 20px;
 }
 
 .next-button:hover {

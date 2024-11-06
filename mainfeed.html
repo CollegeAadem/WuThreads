@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="mainfeed.css">
     <script src="https://kit.fontawesome.com/7b8e1c8c9f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <script src="mainfeed.js"></script>
     <title>Main Feed</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
             <h1>WuThreads</h1>
         </div>
         <div class="header-right">
-            <button class="settings-button" onclick = "window.location.href = 'settings.html'">
+            <button class="settings-button" onclick="window.location.href='settings.html'">
                 <i class="fas fa-cog"></i> Settings
             </button>
         </div>
@@ -28,7 +28,7 @@
         </select>    
     </nav>
     <main>
-        <div class="wrapper">
+        <div class="wrapper" id="posts-container">
             <!-- Recent posts will be displayed here -->
         </div>
     </main>

@@ -19,6 +19,7 @@ header {
 
 .header-left h1 {
     margin: 0;
+    color: white
 }
 
 .settings-button {
@@ -26,7 +27,7 @@ header {
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: black
+    color: white
 }
 
 nav {
@@ -81,4 +82,25 @@ footer button:not(:last-child)::after {
     height: 24px;
     width: 5px;
     background-color: white;
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.timestamp {
+    font-size: 0.9em;
+    color: #080000;
 }

@@ -1,64 +1,55 @@
 body {
-    background-color: maroon;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+    background-color: #fff;
     padding: 20px;
-    background-color: rgb(230, 157, 157);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
 }
 
-h2 {
-    text-align: left;
-    top: 10px;
-    left: 10px;
-    font-family: 'Brush Script MT', cursive;
-    font-size: 2em
-}
-
-h3 {
+h2, h3 {
     text-align: center;
     color: #333;
 }
 
 .input-field {
-    margin: 15px 0;
+    margin-bottom: 15px;
 }
 
 .input-field label {
-    display: inline;
-    vertical-align: middle;
-}
-.radio-field {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.input-field input[type="radio"] {
-    vertical-align: middle;
-    margin-right: 5px;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
 }
 
 .input-field input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 button {
+    width: 100%;
     padding: 10px;
     background-color: #007BFF;
-    color: #fff;
     border: none;
     border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -66,8 +57,8 @@ button:hover {
 }
 
 .register {
-    margin-top: 20px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .register a {
