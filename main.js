@@ -18,7 +18,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
 
     try {
         // Assuming username is the email for simplicity
-        const userCredential = await signInWithEmailAndPassword(auth, email, password);
+        const userCredential = await signInWithEmailAndPassword(auth, username.value, password.value);
         const user = userCredential.user;
 
         console.log('User logged in:', user);
