@@ -37,7 +37,7 @@ document.getElementById('create-account-form').addEventListener('submit', async 
 
     try {
         console.log('Creating user...');
-        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        const userCredential = await createUserWithEmailAndPassword(auth, username.value, password.value);
         const user = userCredential.user;
 
         console.log('Storing user data in Firestore...');
