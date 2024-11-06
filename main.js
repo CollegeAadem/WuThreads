@@ -10,7 +10,7 @@ const auth = getAuth(app);
 document.getElementById('login-form').addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const username = document.getElementById('email');
+    const username = document.getElementById('username');
     const password = document.getElementById('password');
 
     console.log(username);
